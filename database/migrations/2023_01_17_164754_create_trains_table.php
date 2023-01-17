@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string("departure_station",50);
             $table->string("arrive_station",50);
             $table->time("departure_hour")->nullable();
+            $table->string("departure_day");
             $table->time("arrive_hour")->nullable();
             $table->unsignedTinyInteger("train_id")->nullable;
             $table->unsignedTinyInteger("numero_carrozze");
